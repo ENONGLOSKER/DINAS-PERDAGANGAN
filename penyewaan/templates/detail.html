@@ -1,0 +1,39 @@
+{%extends 'snippets/base.html'%}
+{%load static%}
+
+{%block konten%}
+<div class="container">
+   <!-- DATA SEWA -->
+   <h2 class="text-center fw-bold my-4">DETAIL PENYEWAAN</h2>
+   <table class="table table-bordered text-center mb-5">
+     <thead class="">
+       <tr class="table-dark">
+         <th scope="col">No</th>
+         <th scope="col">NAMA</th>
+         <th scope="col">PASAR</th>
+         <th scope="col">TIPE</th>
+         <th scope="col">BLOK</th>
+         <th scope="col">NOMOR</th>
+         <th scope="col">LIMIT SEWA</th>
+         <th scope="col">HARGA</th>
+         <th scope="col">TANGGAL</th>
+       </tr>
+     </thead>
+     <tbody class="">
+       {%for data in datas%}
+       <tr>
+         <th scope="row">{{forloop.counter}}</th>
+         <td class="text-start">{{data.nama}}</td>
+         <td>{{data.tempat}}</td>
+         <td>{{data.tipe}}</td>
+         <td>{{data.blok}}</td>
+         <td>{{data.nomor}}</td>
+         <td>{{data.limit}}</td>
+         <td>{{data.harga}}</td>
+         <td>{{data.created}}</td>
+       </tr>
+       {%endfor%}
+     </tbody>
+   </table>
+</div>
+{%endblock konten%}

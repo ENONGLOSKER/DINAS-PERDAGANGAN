@@ -1,0 +1,35 @@
+/* body {
+    background-color: rgb(232, 240, 243);
+} */
+
+.bg {
+    /* background-color: #3cb371 !important; */
+    background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.bg .container .collapse ul li a {
+    color: aliceblue;
+    font-weight: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg .container .collapse ul li a:hover {
+    color: yellow;
+    /* background-color: white; */
+}
+
+.bg .container .collapse ul li a.active {
+    color: yellow;
+    /* background-color: white; */
+}
+
+.bg .container .collapse ul li a.dropdown-item {
+    color: black;
+}
+
+.bg .container .collapse ul li a.dropdown-item:hover {
+    color: white;
+    background-color: #1974D2;
+    /* background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+}

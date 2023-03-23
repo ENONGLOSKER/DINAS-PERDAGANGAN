@@ -1,0 +1,16 @@
+
+.footer-bottom {
+  background-image: linear-gradient(to left bottom, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5);
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.footer-bottom h6 i {
+  font-size: 14px;
+  word-spacing: 2px;
+}
+.footer-bottom span {
+  opacity: 0.4;
+  font-weight: 200;
+}
