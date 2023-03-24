@@ -40,7 +40,10 @@ class penyewaForm(forms.ModelForm):
             ),
             'harga':forms.TextInput(
                 attrs={
-                    'class':'form-control'
-                }
+                    'class':'form-control',
+                    'placeholder':'Rp.500.000',
+                    # 'value':'1000'
+                    
+                    }
             ),
         }

@@ -13,9 +13,18 @@ def sewa(request):
 
     # data forms
     sewa = penyewaForm(request.POST or None)
+
     if request.method == 'POST':
         if sewa.is_valid():
-            sewa.save()
+            Penyewa.objects.create(
+                tempat = sewa.cleaned_data.get('tempat'),
+                nama = sewa.cleaned_data.get('nama'),
+                tipe = sewa.cleaned_data.get('tipe'),
+                blok = sewa.cleaned_data.get('blok'),
+                nomor = sewa.cleaned_data.get('nomor'),
+                limit = sewa.cleaned_data.get('limit')
+                harga = sewa.cleaned_data.get('harga')
+            )
         return redirect('home:detail')
 
     # lempar data dari database ke tamplate
